@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const Navbar = () => {
@@ -7,12 +8,12 @@ const Navbar = () => {
         <div className="flex items-center justify-between">
           <button>
             <div className="flex items-center space-x-2">
-              <h2 className="text-black dark:text-white font-bold text-2xl">
-                Company
+              <h2 className="text-black dark:text-white font-bold text-2xl ">
+                LearnANDCreate
               </h2>
             </div>
           </button>
-          <div className="hidden lg:block">
+          {/* <div className="hidden lg:block">
             <ul className="flex space-x-10 text-base font-bold text-black/60 dark:text-white">
               <li className="hover:underline hover:underline-offset-4 hover:w-fit transition-all duration-100 ease-linear">
                 <a href="#">Home</a>
@@ -27,16 +28,22 @@ const Navbar = () => {
                 <a href="#">Contact</a>
               </li>
             </ul>
-          </div>
+          </div> */}
           <div className="hidden lg:flex lg:items-center gap-x-2">
-            <button className="flex items-center text-black dark:text-white justify-center px-6 py-2.5 font-semibold">
+            {/* <button className="flex items-center text-black dark:text-white justify-center px-6 py-2.5 font-semibold">
               Sign up
             </button>
             <button className="flex items-center justify-center rounded-md bg-[#4A3BFF] text-white px-6 py-2.5 font-semibold hover:shadow-lg hover:drop-shadow transition duration-200">
-              Login
-            </button>
+              Create
+            </button> */}
+            <Link
+              className="flex items-center justify-center rounded-md bg-[#4A3BFF] text-white px-6 py-2.5 font-semibold hover:shadow-lg hover:drop-shadow transition duration-200"
+              href="/create"
+            >
+              Create
+            </Link>
           </div>
-          <div className="flex items-center justify-center lg:hidden">
+          {/* <div className="flex items-center justify-center lg:hidden">
             <button className="focus:outline-none text-slate-200 dark:text-white">
               <svg
                 stroke="currentColor"
@@ -56,7 +63,7 @@ const Navbar = () => {
                 />
               </svg>
             </button>
-          </div>
+          </div> */}
         </div>
       </nav>
     </div>

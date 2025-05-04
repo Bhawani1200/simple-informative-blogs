@@ -1,8 +1,10 @@
+import Link from "next/link";
 import React from "react";
 
 const Card = () => {
   return (
-    <div className="bg-white rounded shadow max-w-md mx-auto">
+   <Link href="/{id}" className="px-3 py-3">
+     <div className="bg-white rounded shadow max-w-md mx-auto">
       <header className="p-4">
         <img
           src="https://deadsea.com/wp-content/uploads/2019/02/MOST-BUTIFUL-NATURAL-PLACES--1024x771.jpg"
@@ -44,6 +46,7 @@ const Card = () => {
         </a>
       </footer>
     </div>
+   </Link>
   );
 };
 
